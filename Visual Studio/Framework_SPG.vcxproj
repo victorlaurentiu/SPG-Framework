@@ -35,6 +35,7 @@
     <ClCompile Include="..\Source\Core\World.cpp" />
     <ClCompile Include="..\Source\include\gl.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator1\Laborator1.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -61,11 +62,15 @@
     <ClInclude Include="..\Source\include\utils.h" />
     <ClInclude Include="..\Source\Laboratoare\LabList.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator1\Laborator1.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\GeometryShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\VertexShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator2\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator2\Shaders\GeometryShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator2\Shaders\VertexShader.glsl" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
