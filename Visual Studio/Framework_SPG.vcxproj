@@ -36,6 +36,7 @@
     <ClCompile Include="..\Source\include\gl.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator1\Laborator1.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator3\Laborator3.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +64,7 @@
     <ClInclude Include="..\Source\Laboratoare\LabList.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator1\Laborator1.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator3\Laborator3.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl" />
@@ -71,13 +73,15 @@
     <None Include="..\Source\Laboratoare\Laborator2\Shaders\FragmentShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator2\Shaders\GeometryShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator2\Shaders\VertexShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator3\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator3\Shaders\VertexShader.glsl" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FB43B467-42CC-458C-9556-597B025830F7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Framework_EGC</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
