@@ -37,6 +37,7 @@
     <ClCompile Include="..\Source\Laboratoare\Laborator1\Laborator1.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator3\Laborator3.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator4\Laborator4.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,7 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator1\Laborator1.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator3\Laborator3.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl" />
@@ -75,6 +77,10 @@
     <None Include="..\Source\Laboratoare\Laborator2\Shaders\VertexShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator3\Shaders\FragmentShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator3\Shaders\VertexShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.FS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.FS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

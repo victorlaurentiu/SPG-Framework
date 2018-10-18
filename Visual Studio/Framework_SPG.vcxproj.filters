@@ -40,6 +40,12 @@
     <Filter Include="Laboratoare\Laborator3\Shaders">
       <UniqueIdentifier>{a5feb52f-e9df-4f8b-bb05-9f3ddb804479}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Laboratoare\Laborator4">
+      <UniqueIdentifier>{58236728-16ab-4477-9cd6-07da2a99ecff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator4\Shaders">
+      <UniqueIdentifier>{5414b4ec-b067-4a05-9485-bfe6ee05817c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Core\Engine.cpp">
@@ -96,6 +102,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\Laboratoare\Laborator3\Laborator3.cpp">
       <Filter>Laboratoare\Laborator3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator4\Laborator4.cpp">
+      <Filter>Laboratoare\Laborator4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +183,9 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator3\Laborator3.h">
       <Filter>Laboratoare\Laborator3</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h">
+      <Filter>Laboratoare\Laborator4</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl">
@@ -200,6 +212,18 @@
     </None>
     <None Include="..\Source\Laboratoare\Laborator3\Shaders\VertexShader.glsl">
       <Filter>Laboratoare\Laborator3\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.FS.glsl">
+      <Filter>Laboratoare\Laborator4\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl">
+      <Filter>Laboratoare\Laborator4\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.FS.glsl">
+      <Filter>Laboratoare\Laborator4\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl">
+      <Filter>Laboratoare\Laborator4\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>
