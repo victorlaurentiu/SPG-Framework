@@ -35,7 +35,7 @@ struct Particle
 ParticleEffect<Particle> *particleEffect;
 
 // Order of function calling can be seen in "Source/Core/World.cpp::LoopUpdate()"
-// https://github.com/UPB-Graphics/Framework-EGC/blob/master/Source/Core/World.cpp
+// https://github.com/UPB-Graphics/SPG-Framework/blob/master/Source/Core/World.cpp
 
 Laborator5::Laborator5()
 {
@@ -50,16 +50,6 @@ void Laborator5::Init()
 	auto camera = GetSceneCamera();
 	camera->SetPositionAndRotation(glm::vec3(0, 8, 8), glm::quat(glm::vec3(-40 * TO_RADIANS, 0, 0)));
 	camera->Update();
-
-	ToggleGroundPlane();
-
-	ToggleGroundPlane();
-
-	{
-		Mesh* mesh = new Mesh("teapot");
-		mesh->LoadMesh(RESOURCE_PATH::MODELS + "Primitives", "teapot.obj");
-		meshes[mesh->GetMeshID()] = mesh;
-	}
 
 	{
 		Mesh* mesh = new Mesh("box");
@@ -141,20 +131,9 @@ void Laborator5::Update(float deltaTimeSeconds)
 	glDisable(GL_BLEND);
 
 	{
-		Transform T;
-		T.SetScale(glm::vec3(3));
-		T.SetWorldPosition(glm::vec3(5, 0, 0));
-
-		RenderMesh(meshes["teapot"], shaders["Simple"], T.GetModel());
+		glm::mat4 model = glm::translate(glm::mat4(1), glm::vec3(3, 0, 0));
+		RenderMesh(meshes["box"], shaders["Simple"], model);
 	}
-
-	{
-		Transform T;
-		T.SetWorldPosition(glm::vec3(3, 0, 2));
-
-		RenderMesh(meshes["box"], shaders["Simple"], T.GetModel());
-	}
-	
 }
 
 void Laborator5::FrameEnd()
@@ -182,7 +161,7 @@ void Laborator5::LoadShader(std::string name, bool hasGeomtery)
 }
 
 // Read the documentation of the following functions in: "Source/Core/Window/InputController.h" or
-// https://github.com/UPB-Graphics/Framework-EGC/blob/master/Source/Core/Window/InputController.h
+// https://github.com/UPB-Graphics/SPG-Framework/blob/master/Source/Core/Window/InputController.h
 
 void Laborator5::OnInputUpdate(float deltaTime, int mods)
 {
@@ -191,9 +170,6 @@ void Laborator5::OnInputUpdate(float deltaTime, int mods)
 
 void Laborator5::OnKeyPress(int key, int mods)
 {
-	
-	//TODO 
-	//modificati numarul de instante si numarul de puncte generate
 };
 
 void Laborator5::OnKeyRelease(int key, int mods)
