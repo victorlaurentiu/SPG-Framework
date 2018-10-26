@@ -46,6 +46,12 @@
     <Filter Include="Laboratoare\Laborator4\Shaders">
       <UniqueIdentifier>{5414b4ec-b067-4a05-9485-bfe6ee05817c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Laboratoare\Laborator5">
+      <UniqueIdentifier>{08989ca2-9650-4ea6-8389-8762dfd3e5e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator5\Shaders">
+      <UniqueIdentifier>{e8889111-1222-4277-aaf7-48f3b9a5e930}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Core\Engine.cpp">
@@ -105,6 +111,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\Laboratoare\Laborator4\Laborator4.cpp">
       <Filter>Laboratoare\Laborator4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator5\Laborator5.cpp">
+      <Filter>Laboratoare\Laborator5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +195,9 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h">
       <Filter>Laboratoare\Laborator4</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator5\Laborator5.h">
+      <Filter>Laboratoare\Laborator5</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl">
@@ -224,6 +236,21 @@
     </None>
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl">
       <Filter>Laboratoare\Laborator4\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.FS.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.GS.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.VS.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.FS.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.VS.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

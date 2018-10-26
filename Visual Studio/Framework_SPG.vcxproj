@@ -38,6 +38,7 @@
     <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator3\Laborator3.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator4\Laborator4.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator5\Laborator5.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +68,7 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator3\Laborator3.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator5\Laborator5.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl" />
@@ -81,6 +83,11 @@
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.FS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.FS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.GS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.VS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.FS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.VS.glsl" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
