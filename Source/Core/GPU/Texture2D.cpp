@@ -156,7 +156,7 @@ void Texture2D::CreateCubeTexture(const float * data, uint width, uint height, u
 void Texture2D::CreateFrameBufferTexture(uint width, uint height, uint targetID, uint precision)
 {
 	bitsPerPixel = precision;
-	int prec = precision == 32 / 8 - 1;
+	int prec = precision / 8 - 1;
 	Init2DTexture(width, height, 4);
 	glTexImage2D(targetType, 0, internalFormat[prec][4], width, height, 0, pixelFormat[4], GL_UNSIGNED_BYTE, 0);
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + targetID, GL_TEXTURE_2D, textureID, 0);
