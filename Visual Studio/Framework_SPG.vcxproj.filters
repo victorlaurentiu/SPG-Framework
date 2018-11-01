@@ -52,6 +52,12 @@
     <Filter Include="Laboratoare\Laborator5\Shaders">
       <UniqueIdentifier>{e8889111-1222-4277-aaf7-48f3b9a5e930}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Laboratoare\Laborator6">
+      <UniqueIdentifier>{d5867297-4ef2-4ecb-bc7e-fecec311819f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator6\Shaders">
+      <UniqueIdentifier>{c1eef286-6d82-4e33-a2cc-c336ca266f7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Core\Engine.cpp">
@@ -114,6 +120,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\Laboratoare\Laborator5\Laborator5.cpp">
       <Filter>Laboratoare\Laborator5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator6\Laborator6.cpp">
+      <Filter>Laboratoare\Laborator6</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +207,9 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator5\Laborator5.h">
       <Filter>Laboratoare\Laborator5</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator6\Laborator6.h">
+      <Filter>Laboratoare\Laborator6</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl">
@@ -251,6 +263,24 @@
     </None>
     <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.VS.glsl">
       <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.FS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.VS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.FS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.VS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.FS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.VS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>
