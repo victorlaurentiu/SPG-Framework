@@ -14,8 +14,10 @@ layout(location = 2) out vec3 world_normal;
 
 void main()
 {
-	// TODO
-
 	texture_coord = v_texture_coord;
-	gl_Position = Projection * View * Model * vec4(v_position, 1);
+
+	world_position = (Model * vec4(v_position, 1.0)).xyz;
+	world_normal = mat3(Model) * v_normal;
+
+	gl_Position = Projection * View * vec4(world_position, 1);
 }

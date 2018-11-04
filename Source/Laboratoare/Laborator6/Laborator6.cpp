@@ -164,8 +164,8 @@ void Laborator6::Update(float deltaTimeSeconds)
 		// If no culling is active (both GL_BACK and GL_FRONT are rendered) then the light area will double the intensity for each pixel
 
 		// TODO
-		//glEnable(GL_CULL_FACE);
-		//glCullFace(GL_FRONT);
+		glEnable(GL_CULL_FACE);
+		glCullFace(GL_FRONT);
 
 		for (auto &l : lights)
 		{
@@ -178,7 +178,7 @@ void Laborator6::Update(float deltaTimeSeconds)
 		}
 
 		// TODO
-		//glDisable(GL_CULL_FACE);
+		glDisable(GL_CULL_FACE);
 
 		glDepthMask(GL_TRUE);
 		glDisable(GL_BLEND);

@@ -11,7 +11,7 @@ layout(location = 2) out vec4 out_color;
 
 void main()
 {
-	// TODO
-
+	out_world_position = vec4(world_position, 1);
+	out_world_normal = vec4(normalize(world_normal), 0);
 	out_color = texture(u_texture_0, text_coord);
 }

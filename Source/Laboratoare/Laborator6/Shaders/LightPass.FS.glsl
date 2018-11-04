@@ -36,8 +36,8 @@ vec4 PhongLight(vec3 w_pos, vec3 w_N)
 
 	// TODO
 	// Ignore fragmets outside of the light influence zone (radius)
-//	if (dist > light_radius)
-//		return vec4(0);
+	if (dist > light_radius)
+		return vec4(0);
 
 	float att = pow(light_radius - dist, 2);
 
