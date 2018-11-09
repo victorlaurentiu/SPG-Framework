@@ -22,41 +22,47 @@
     <Filter Include="Laboratoare\Laborator1">
       <UniqueIdentifier>{b704d709-81d8-479e-b929-08837c1d7ded}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Laboratoare\Laborator2">
+      <UniqueIdentifier>{72b98a52-54e5-46b2-b1cc-ddbf01b29581}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Managers">
       <UniqueIdentifier>{2940a1fd-9fef-46a7-93fb-a8241118d00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator3">
+      <UniqueIdentifier>{f21df892-0e51-49dc-ac1e-32f90fc6fc4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator4">
+      <UniqueIdentifier>{03d968af-da09-43fb-ac60-276d51f376a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator5">
+      <UniqueIdentifier>{882a2d66-73aa-4b5c-8461-78d8766990ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator6">
+      <UniqueIdentifier>{c208b5cf-f3c3-481c-af56-9044ff6e74ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator6\Shaders">
+      <UniqueIdentifier>{0b647c6f-91ef-419f-8a96-0243b8bdb058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator7">
+      <UniqueIdentifier>{30262e3b-2fe0-4ca6-a850-d2e0515fab20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator7\Shaders">
+      <UniqueIdentifier>{4eb2faa9-00d0-4f0b-af74-1e07a20ad09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator4\Shaders">
+      <UniqueIdentifier>{afd4622e-5b76-4462-8874-dc7eb9b50506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Laboratoare\Laborator5\Shaders">
+      <UniqueIdentifier>{d60662ae-923f-4667-bda7-41f28ae2230f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Laboratoare\Laborator1\Shaders">
       <UniqueIdentifier>{1dbdbd6b-a228-4ae4-9d1d-c7705cd4a999}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Laboratoare\Laborator2">
-      <UniqueIdentifier>{62efe740-18ea-44e1-b412-1f6994e2d756}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Laboratoare\Laborator2\Shaders">
-      <UniqueIdentifier>{77e9a0d7-2e37-4e2d-9d8a-351e817ae216}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator3">
-      <UniqueIdentifier>{ff61a8b2-4e0d-4169-938b-a5202ca98f62}</UniqueIdentifier>
+      <UniqueIdentifier>{c55b18db-9a1d-4d81-8b2e-1028374afc00}</UniqueIdentifier>
     </Filter>
     <Filter Include="Laboratoare\Laborator3\Shaders">
-      <UniqueIdentifier>{a5feb52f-e9df-4f8b-bb05-9f3ddb804479}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator4">
-      <UniqueIdentifier>{58236728-16ab-4477-9cd6-07da2a99ecff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator4\Shaders">
-      <UniqueIdentifier>{5414b4ec-b067-4a05-9485-bfe6ee05817c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator5">
-      <UniqueIdentifier>{08989ca2-9650-4ea6-8389-8762dfd3e5e7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator5\Shaders">
-      <UniqueIdentifier>{e8889111-1222-4277-aaf7-48f3b9a5e930}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator6">
-      <UniqueIdentifier>{d5867297-4ef2-4ecb-bc7e-fecec311819f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Laboratoare\Laborator6\Shaders">
-      <UniqueIdentifier>{c1eef286-6d82-4e33-a2cc-c336ca266f7c}</UniqueIdentifier>
+      <UniqueIdentifier>{66e624e2-f712-4e5b-95bd-5fcfd085debf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +88,9 @@
     <ClCompile Include="..\Source\Core\Window\WindowCallbacks.cpp">
       <Filter>Core\Window</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp">
+      <Filter>Laboratoare\Laborator2</Filter>
+    </ClCompile>
     <ClCompile Include="..\Source\Core\GPU\Mesh.cpp">
       <Filter>Core\GPU</Filter>
     </ClCompile>
@@ -106,12 +115,6 @@
     <ClCompile Include="..\Source\Component\SceneInput.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Core\GPU\FrameBuffer.cpp">
-      <Filter>Core\GPU</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\Laboratoare\Laborator2\Laborator2.cpp">
-      <Filter>Laboratoare\Laborator2</Filter>
-    </ClCompile>
     <ClCompile Include="..\Source\Laboratoare\Laborator3\Laborator3.cpp">
       <Filter>Laboratoare\Laborator3</Filter>
     </ClCompile>
@@ -123,6 +126,15 @@
     </ClCompile>
     <ClCompile Include="..\Source\Laboratoare\Laborator6\Laborator6.cpp">
       <Filter>Laboratoare\Laborator6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator7\Laborator7.cpp">
+      <Filter>Laboratoare\Laborator7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\GPU\FrameBuffer.cpp">
+      <Filter>Core\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Laborator7\Laborator7_WinAPI.cpp">
+      <Filter>Laboratoare\Laborator7</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +168,9 @@
     <ClInclude Include="..\Source\Core\Window\WindowCallbacks.h">
       <Filter>Core\Window</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h">
+      <Filter>Laboratoare\Laborator2</Filter>
+    </ClInclude>
     <ClInclude Include="..\Source\Core\GPU\Mesh.h">
       <Filter>Core\GPU</Filter>
     </ClInclude>
@@ -186,18 +201,6 @@
     <ClInclude Include="..\Source\Component\SceneInput.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Core\GPU\SSBO.h">
-      <Filter>Core\GPU</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Core\GPU\FrameBuffer.h">
-      <Filter>Core\GPU</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Core\GPU\ParticleEffect.h">
-      <Filter>Core\GPU</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\Laboratoare\Laborator2\Laborator2.h">
-      <Filter>Laboratoare\Laborator2</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\Laboratoare\Laborator3\Laborator3.h">
       <Filter>Laboratoare\Laborator3</Filter>
     </ClInclude>
@@ -210,8 +213,41 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator6\Laborator6.h">
       <Filter>Laboratoare\Laborator6</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Laborator7\Laborator7.h">
+      <Filter>Laboratoare\Laborator7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\GPU\SSBO.h">
+      <Filter>Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\GPU\FrameBuffer.h">
+      <Filter>Core\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\GPU\ParticleEffect.h">
+      <Filter>Core\GPU</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Source\Laboratoare\Laborator7\Shaders\FragmentShader.glsl">
+      <Filter>Laboratoare\Laborator7\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator7\Shaders\VertexShader.glsl">
+      <Filter>Laboratoare\Laborator7\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\FragmentShader.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\VertexShader.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\GeometryShader.glsl">
+      <Filter>Laboratoare\Laborator5\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.FS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.VS.glsl">
+      <Filter>Laboratoare\Laborator6\Shaders</Filter>
+    </None>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl">
       <Filter>Laboratoare\Laborator1\Shaders</Filter>
     </None>
@@ -221,7 +257,6 @@
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\GeometryShader.glsl">
       <Filter>Laboratoare\Laborator1\Shaders</Filter>
     </None>
-    <None Include="ClassDiagram.cd" />
     <None Include="..\Source\Laboratoare\Laborator2\Shaders\FragmentShader.glsl">
       <Filter>Laboratoare\Laborator2\Shaders</Filter>
     </None>
@@ -237,10 +272,10 @@
     <None Include="..\Source\Laboratoare\Laborator3\Shaders\VertexShader.glsl">
       <Filter>Laboratoare\Laborator3\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.FS.glsl">
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl">
       <Filter>Laboratoare\Laborator4\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl">
+    <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.FS.glsl">
       <Filter>Laboratoare\Laborator4\Shaders</Filter>
     </None>
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.FS.glsl">
@@ -249,37 +284,16 @@
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl">
       <Filter>Laboratoare\Laborator4\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.FS.glsl">
-      <Filter>Laboratoare\Laborator5\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.GS.glsl">
-      <Filter>Laboratoare\Laborator5\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.VS.glsl">
-      <Filter>Laboratoare\Laborator5\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.FS.glsl">
-      <Filter>Laboratoare\Laborator5\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.VS.glsl">
-      <Filter>Laboratoare\Laborator5\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.FS.glsl">
-      <Filter>Laboratoare\Laborator6\Shaders</Filter>
-    </None>
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.VS.glsl">
       <Filter>Laboratoare\Laborator6\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.FS.glsl">
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.FS.glsl">
       <Filter>Laboratoare\Laborator6\Shaders</Filter>
     </None>
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.VS.glsl">
       <Filter>Laboratoare\Laborator6\Shaders</Filter>
     </None>
-    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.FS.glsl">
-      <Filter>Laboratoare\Laborator6\Shaders</Filter>
-    </None>
-    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.VS.glsl">
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.FS.glsl">
       <Filter>Laboratoare\Laborator6\Shaders</Filter>
     </None>
   </ItemGroup>

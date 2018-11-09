@@ -40,6 +40,8 @@
     <ClCompile Include="..\Source\Laboratoare\Laborator4\Laborator4.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator5\Laborator5.cpp" />
     <ClCompile Include="..\Source\Laboratoare\Laborator6\Laborator6.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator7\Laborator7.cpp" />
+    <ClCompile Include="..\Source\Laboratoare\Laborator7\Laborator7_WinAPI.cpp" />
     <ClCompile Include="..\Source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +73,7 @@
     <ClInclude Include="..\Source\Laboratoare\Laborator4\Laborator4.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator5\Laborator5.h" />
     <ClInclude Include="..\Source\Laboratoare\Laborator6\Laborator6.h" />
+    <ClInclude Include="..\Source\Laboratoare\Laborator7\Laborator7.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Laboratoare\Laborator1\Shaders\FragmentShader.glsl" />
@@ -85,18 +88,17 @@
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\CubeMap.VS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.FS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator4\Shaders\Normal.VS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.FS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.GS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Particle.VS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.FS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator5\Shaders\Simple.VS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\GeometryShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator5\Shaders\VertexShader.glsl" />
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.FS.glsl" />
-    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.VS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.FS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\LightPass.VS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.FS.glsl" />
     <None Include="..\Source\Laboratoare\Laborator6\Shaders\Render2Texture.VS.glsl" />
-    <None Include="ClassDiagram.cd" />
+    <None Include="..\Source\Laboratoare\Laborator6\Shaders\Composition.VS.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator7\Shaders\FragmentShader.glsl" />
+    <None Include="..\Source\Laboratoare\Laborator7\Shaders\VertexShader.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FB43B467-42CC-458C-9556-597B025830F7}</ProjectGuid>
@@ -226,6 +228,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
       <Command>call "$(SolutionDir)scripts\post-build.bat" $(PlatformTarget) $(Configuration)</Command>
@@ -268,6 +271,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
       <Command>call "$(SolutionDir)scripts\post-build.bat" $(PlatformTarget) $(Configuration)</Command>
