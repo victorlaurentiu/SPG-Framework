@@ -37,6 +37,7 @@ Texture2D::Texture2D()
 	channels = 0;
 	textureID = 0;
 	bitsPerPixel = 8;
+	cacheInMemory = false;
 	targetType = GL_TEXTURE_2D;
 	wrappingMode = GL_REPEAT;
 	textureMinFilter = GL_LINEAR;
@@ -62,9 +63,9 @@ void Texture2D::Init(GLuint gpuTextureID, unsigned int width, unsigned int heigh
 bool Texture2D::Load2D(const char* fileName, GLenum wrapping_mode)
 {
 	int width, height, chn;
-	unsigned char *data = stbi_load(fileName, &width, &height, &chn, 0);
+	imageData = stbi_load(fileName, &width, &height, &chn, 0);
 
-	if (data == NULL) {
+	if (imageData == NULL) {
 		#ifdef DEBUG_INFO
 		cout << "ERROR loading texture: " << file_name << endl << endl;
 		#endif
@@ -80,29 +81,41 @@ bool Texture2D::Load2D(const char* fileName, GLenum wrapping_mode)
 	wrappingMode = wrapping_mode;
 
 	Init2DTexture(width, height, chn);
-	glTexImage2D(targetType, 0, internalFormat[0][chn], width, height, 0, pixelFormat[chn], GL_UNSIGNED_BYTE, data);
+	glTexImage2D(targetType, 0, internalFormat[0][chn], width, height, 0, pixelFormat[chn], GL_UNSIGNED_BYTE, imageData);
 	glGenerateMipmap(targetType);
 	glBindTexture(targetType, 0);
 	CheckOpenGLError();
 
-	stbi_image_free(data);
+	if (cacheInMemory == false)
+	{
+		stbi_image_free(imageData);
+	}
+
 	return true;
 }
 
-void Texture2D::SaveToFile(const char * fileName) const
+void Texture2D::SaveToFile(const char * fileName)
 {
-	unsigned char *data = new unsigned char[width * height * channels];
+	if (imageData == nullptr)
+	{
+		imageData = new unsigned char[width * height * channels];
+	}
 	glBindTexture(targetType, textureID);
-	glGetTexImage(targetType, 0, pixelFormat[channels], GL_UNSIGNED_BYTE, (void*)data);
+	glGetTexImage(targetType, 0, pixelFormat[channels], GL_UNSIGNED_BYTE, (void*)imageData);
 
-	stbi_write_png(fileName, width, height, channels, data, width * channels);
-	SAFE_FREE_ARRAY(data);
+	stbi_write_png(fileName, width, height, channels, imageData, width * channels);
+}
+
+void Texture2D::CacheInMemory(bool state)
+{
+	cacheInMemory = state;
 }
 
 void Texture2D::UploadNewData(const uchar *img)
 {
 	Bind();
 	glTexSubImage2D(targetType, 0, 0, 0, width, height, pixelFormat[channels], GL_UNSIGNED_BYTE, img);
+	glGenerateMipmap(targetType);
 	UnBind();
 }
 
@@ -110,6 +123,7 @@ void Texture2D::UploadNewData(const ushort *img)
 {
 	Bind();
 	glTexSubImage2D(targetType, 0, 0, 0, width, height, pixelFormat[channels], GL_UNSIGNED_SHORT, img);
+	glGenerateMipmap(targetType);
 	UnBind();
 }
 
@@ -212,6 +226,16 @@ void Texture2D::GetSize(unsigned int &width,unsigned int &height) const
 {
 	width = this->width;
 	height = this->height;
+}
+
+unsigned char * Texture2D::GetImageData() const
+{
+	return imageData;
+}
+
+unsigned int Texture2D::GetNrChannels() const
+{
+	return channels;
 }
 
 void Texture2D::SetWrappingMode(GLenum mode)

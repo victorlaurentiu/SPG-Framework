@@ -27,24 +27,30 @@ void TextureManager::Init()
 //		SAFE_FREE(vTextures[i]);
 //}
 
-Texture2D* TextureManager::LoadTexture(const string &path, const char *fileName)
+Texture2D* TextureManager::LoadTexture(const string &path, const char *fileName, const char *key, bool forceLoad, bool cacheInRAM)
 {
-	Texture2D *texture = GetTexture(fileName);
+	std::string uid = key ? key : fileName;
+	Texture2D *texture = GetTexture(uid.c_str());
 
-	if (texture) {
-		return mapTextures[fileName];
+	if (forceLoad || texture == nullptr)
+	{
+		if (texture == nullptr)
+		{
+			texture = new Texture2D();
+		}
+		
+		texture->CacheInMemory(cacheInRAM);
+		bool status = texture->Load2D((path + (fileName ? (string("/") + fileName) : "")).c_str());
+
+		if (status == false)
+		{
+			delete texture;
+			return vTextures[0];
+		}
+
+		vTextures.push_back(texture);
+		mapTextures[key ? key : fileName] = texture;
 	}
-
-	texture = new Texture2D();
-	bool status = texture->Load2D((path + '/' + fileName).c_str());
-
-	if (status == false) {
-		delete texture;
-		return vTextures[0];
-	}
-
-	vTextures.push_back(texture);
-	mapTextures[fileName] = texture;
 	return texture;
 }
 

@@ -24,11 +24,15 @@ class Texture2D
 		void CreateDepthBufferTexture(uint width, uint height);
 
 		bool Load2D(const char* fileName, GLenum wrappingMode = GL_REPEAT);
-		void SaveToFile(const char* fileName) const;
+		void SaveToFile(const char* fileName);
+		void CacheInMemory(bool state);
 
 		unsigned int GetWidth() const;
 		unsigned int GetHeight() const;
 		void GetSize(unsigned int &width, unsigned int &height) const;
+		unsigned char *GetImageData() const;
+
+		unsigned int GetNrChannels() const;
 
 		void SetWrappingMode(GLenum mode);
 		void SetFiltering(GLenum minFilter, GLenum magFilter = GL_LINEAR);
@@ -40,14 +44,17 @@ class Texture2D
 		void Init2DTexture(unsigned int width, unsigned int height, unsigned int channels);
 
 	private:
+		bool cacheInMemory;
 		unsigned int bitsPerPixel;
-
 		unsigned int width;
 		unsigned int height;
 		unsigned int channels;
+
 		GLuint targetType;
 		GLuint textureID;
 		GLenum wrappingMode;
 		GLenum textureMinFilter;
 		GLenum textureMagFilter;
+
+		unsigned char *imageData;
 };
