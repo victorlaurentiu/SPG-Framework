@@ -79,6 +79,9 @@
     <ClCompile Include="..\..\SPG-AnimLoader\SPG-Framework-master\Source\Laboratoare\Project\Project.cpp">
       <Filter>Laboratoare\Project</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Laboratoare\Project\AnimatedModel\AnimatedModel.cpp">
+      <Filter>Laboratoare\Project</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Core\World.h">
@@ -148,6 +151,9 @@
       <Filter>Core\GPU</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SPG-AnimLoader\SPG-Framework-master\Source\Laboratoare\Project\Project.h">
+      <Filter>Laboratoare\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Laboratoare\Project\AnimatedModel\AnimatedModel.h">
       <Filter>Laboratoare\Project</Filter>
     </ClInclude>
   </ItemGroup>
